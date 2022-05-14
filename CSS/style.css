@@ -20,6 +20,9 @@
   cursor: pointer;
   border-radius: 16px;
 }
+.spotifyLog:hover{
+  background: greenyellow;
+}
 
 form {
 display: flex;
