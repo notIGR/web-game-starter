@@ -1,15 +1,36 @@
-
+*{
+  background: #111319;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #b9bdc0;
   margin-top: 60px;
 }
+.spotifyLog{
+  background: green;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
-.selectArtist {
+form {
 display: flex;
 align-items: center;
 justify-content: center;
+}
+
+.selectArtist img {
+  width: 25vw;
+}
+
+#vs {
+  padding: 1vw;
 }
