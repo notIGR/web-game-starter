@@ -9,7 +9,7 @@
   color: #b9bdc0;
   margin-top: 60px;
 }
-.spotifyLog{
+.spotifyLog, #submitForm{
   background: green;
   color: white;
   padding: 1rem;
