@@ -1,6 +1,8 @@
 *{
   background: #111319;
 }
+
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +24,21 @@
 }
 .spotifyLog:hover{
   background: greenyellow;
+}
+
+#submitForm {
+  background: #2151b8;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px
+}
+#submitForm:hover {
+background: #8923a8;
 }
 
 form {
