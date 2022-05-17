@@ -1,7 +1,5 @@
-
-
 const client_id = import.meta.env.VITE_CLIENT_ID;
-const redirect_uri = "http://localhost:3000/";
+const redirect_uri = "http://localhost:3000/MainPage.html";
 
 const scope = "user-read-private user-read-email";
 
