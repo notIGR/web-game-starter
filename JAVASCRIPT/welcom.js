@@ -15,7 +15,7 @@ link.href = url;
 
 const signSpotify = document.createElement("button");
 
-signSpotify.textContent = "Sing into Spotify";
+signSpotify.textContent = "Sign into Spotify";
 signSpotify.classList = "spotifyLog";
 
 link.appendChild(signSpotify);
