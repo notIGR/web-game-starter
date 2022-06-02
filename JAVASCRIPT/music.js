@@ -15,6 +15,7 @@ for (let i = 0; i < 5; i++) {
 	});
 }
 
+//next step will be to have a diffrent alert depending on witch artist is chosen. and add a stop wacth to help people track how long they listen to each track.
 const wubz = () => {
 	alert(
 		"Welcome to Wook Bass: here you find lots of whomp whomps, wubz for your dubz, and many other obscure sounds instead of lyrics. Wook bass is one of many sub generes of Dubstep"
