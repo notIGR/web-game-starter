@@ -1,19 +1,21 @@
-*{
-  background: #500cbd;
+html {
+  min-height: 100vh;
 }
-
+body {
+  background: radial-gradient(rgb(12, 89, 12),black)
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #b9bdc0;
+  color: #fefefe;
   margin-top: 60px;
 }
 #welcome {
   display:block;
 }
-.spotifyLog {
+.spotifyLog,#b1,#b2,#b3,#b4,#b5 {
   background: green;
   color: white;
   padding: 1rem;
@@ -27,21 +29,6 @@
 }
 .spotifyLog:hover{
   background: greenyellow;
-}
-
-#submitForm {
-  background: #2151b8;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 16px
-}
-#submitForm:hover {
-background: #8923a8;
 }
 
 form {
@@ -60,3 +47,4 @@ justify-content: center;
 ul {
   list-style-type: none;
 }
+
