@@ -2,7 +2,33 @@ html {
   min-height: 100vh;
 }
 body {
-  background: radial-gradient(rgb(12, 89, 12),black)
+  background: radial-gradient(rgb(12, 89, 12), black);
+  margin: 1%;
+  padding: 1%;
+}
+.stop-watch {
+  margin: 2em auto;
+  text-align: center;
+}
+.time {
+  font-size: 3em;
+}
+#btn-start,#btn-stop,#btn-reset {
+  border: none;
+  border-radius: 10px;
+  padding: 2em 1em;
+  font-size: 1.2em;
+  width: 140px;
+  margin: 10px;
+  background-color: #008000;
+  color: white;
+}
+#btn-start:hover,#btn-stop:hover,#btn-reset:hover {
+  cursor: pointer;
+  background-color: #adff2f;
+  color: #0037cd;
+  transition: 0.5s;
+  border: none;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -13,10 +39,15 @@ body {
   margin-top: 60px;
 }
 #welcome {
-  display:block;
+  display: block;
 }
-.spotifyLog,#b1,#b2,#b3,#b4,#b5 {
-  background: green;
+.spotifyLog,
+#b1,
+#b2,
+#b3,
+#b4,
+#b5 {
+  background: #008000;
   color: white;
   padding: 1rem;
   text-align: center;
@@ -27,14 +58,15 @@ body {
   cursor: pointer;
   border-radius: 16px;
 }
-.spotifyLog:hover{
-  background: greenyellow;
+.spotifyLog:hover {
+  background: #adff2f;
+  color: #0037cd;
 }
 
 form {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .selectArtist img {
@@ -47,4 +79,3 @@ justify-content: center;
 ul {
   list-style-type: none;
 }
-

@@ -14,7 +14,6 @@ for (let i = 0; i < 5; i++) {
 		result.innerText = selected.value;
 	});
 }
-
 //next step will be to have a diffrent alert depending on witch artist is chosen. and add a stop wacth to help people track how long they listen to each track.
 const wubz = () => {
 	alert(
@@ -40,4 +39,56 @@ const celeb = () => {
 	alert(
 		"There are some celeberties that like to DJ as a hobby. I have selected Bass house tracks. Like all house music, listen out for the boots n cats. Bass House specificlly usually has a higher bpm and has the bass turned all the way up."
 	);
+};
+
+window.onload = function(){
+	// eslint-disable-next-line no-octal
+	var seconds = 00;
+	// eslint-disable-next-line no-octal
+	var tens = 00;
+	var OutputSeconds = document.getElementById("second");
+	var OutputTens = document.getElementById("tens");
+	var buttonStart = document.getElementById("btn-start");
+	var buttonStop = document.getElementById("btn-stop");
+	var buttonReset = document.getElementById("btn-reset");
+	var Interval;
+
+	buttonStart.addEventListener("click", () => {
+		clearInterval(Interval);
+		Interval = setInterval(startTimer, 10);  // millisecond 10 = 0.01 second
+	});
+
+	buttonStop.addEventListener("click", () => {
+		clearInterval(Interval);
+	});
+
+	buttonReset.addEventListener("click", () => {
+		clearInterval(Interval);
+		tens = "00";
+		seconds = "00";
+		OutputSeconds.innerHTML = seconds;
+		OutputTens.innerHTML = tens;
+	});
+
+	const startTimer = () =>{
+		tens++;
+		if(tens <= 9){
+			OutputTens.innerHTML = "0" + tens;
+		}
+
+		if(tens > 9){
+			OutputTens.innerHTML = tens;
+		}
+
+		if(tens > 99){
+			seconds++;
+			OutputSeconds.innerHTML = "0" + seconds;
+			tens = 0;
+			OutputTens.innerHTML = "0" + 0;
+		}
+
+		if(seconds > 9){
+			OutputSeconds.innerHTML = seconds;
+		}
+	};
 };
