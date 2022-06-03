@@ -19,26 +19,66 @@ const wubz = () => {
 	alert(
 		"Welcome to Wook Bass: here you find lots of whomp whomps, wubz for your dubz, and many other obscure sounds instead of lyrics. Wook bass is one of many sub generes of Dubstep"
 	);
+	const jesse = document.getElementById("subtronics");
+	const budz= document.getElementById("ganjaWhite");
+	if(jesse.checked) {
+		alert("My personal favorite, good choice");
+	}
+	if(budz.checked) {
+		alert("Mr. Wobbles greets you with open arms");
+	}
 };
 const brostep = () => {
 	alert(
 		"Hey bro, you listen to dubstep? Here you will hear some brostep. Usually has some vocals followed by an aggresive in your face beat drop, accompanyued by a carfully selected group of noises modified via computer. Listen for the Boom...Clap on repeat in the background. Typically runs at 140 bpm, but flow of the songs feels like 70 bpm"
 	);
+	const king = document.getElementById("sullyKing");
+	const bear= document.getElementById("bearGrillz");
+	if(king.checked) {
+		alert("Heavy Metal meets dubstep, Sullivan king is born");
+	}
+	if(bear.checked) {
+		alert("Do you feel it Mr. Crabs?");
+	}
 };
 const riddim = () => {
 	alert(
 		"DJ, DOWN WITH THE CHUNE. Yet another sub genre of dubstep, similar to brostep with the repeating boom...clap running on repeat in the background. Minimal to no lyrics and simple sound design make it easy to bounce too."
 	);
+	const hol = document.getElementById("hol!");
+	const death= document.getElementById("muerte");
+	if(hol.checked) {
+		alert("Fun fact: Hol! is a producer based in France.");
+	}
+	if(death.checked) {
+		alert("Muerte is spanish for death if you did not already know.");
+	}
 };
 const techno = () => {
 	alert(
 		"Thump,thump,thump,thump,thump.... is that my heart beat? Nope, its just TECHNO! Thump Tick,Thump Tick,Thump Tick,Thump Tick. Very repettitiv genre of EDM with songs on average being 6-7 minutes long. Techno focus on slowly adding one element of the song at a time. They are in no rush to get too the drop, techno is a marathon not a sprint."
 	);
+	const tonalTheory = document.getElementById("tonal");
+	const deWitte= document.getElementById("charlotte");
+	if(tonalTheory.checked) {
+		alert("Up and coming techno artist based in the DMV(D.C, Maryland, Virginia), not the Department of Motor Vheichles!");
+	}
+	if(deWitte.checked) {
+		alert("Belgian DJ and producer, specialized in dark acid techno. Has been active in the EDM scene since 2010");
+	}
 };
 const celeb = () => {
 	alert(
 		"There are some celeberties that like to DJ as a hobby. I have selected Bass house tracks. Like all house music, listen out for the boots n cats. Bass House specificlly usually has a higher bpm and has the bass turned all the way up."
 	);
+	const shaq = document.getElementById("disel");
+	const idris= document.getElementById("idris");
+	if(shaq.checked) {
+		alert("NBA start turned DJ. He actully prefers to produce dubstep, but when you have time and money you can do whatever you want");
+	}
+	if(idris.checked) {
+		alert("Idris Iba is a renissanse man. Mixed martial arts, actor, Comedian, Disc Jocky, AND producer.");
+	}
 };
 
 window.onload = function(){
