@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 for (let i = 0; i < 5; i++) {
 	const btnShow = document.querySelector(`#b${i + 1}`);
 	const result = document.querySelector(`#c${i + 1}`);
@@ -22,10 +23,10 @@ const wubz = () => {
 	const jesse = document.getElementById("subtronics");
 	const budz= document.getElementById("ganjaWhite");
 	if(jesse.checked) {
-		alert("My personal favorite, good choice");
+		alert("My personal favorite, Subtronics likes to mix and match sound that you would not think to put together in one song.");
 	}
 	if(budz.checked) {
-		alert("Mr. Wobbles greets you with open arms");
+		alert("Mr. Wobbles greets you with open arms. Ganja white night has a huge following of fans called buds because all who listen to Ganja White Night are friends");
 	}
 };
 const brostep = () => {
