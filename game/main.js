@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 for (let i = 0; i < 5; i++) {
 	const btnShow = document.querySelector(`#b${i + 1}`);
 	const result = document.querySelector(`#c${i + 1}`);
@@ -16,6 +15,7 @@ for (let i = 0; i < 5; i++) {
 	});
 }
 //next step will be to have a diffrent alert depending on witch artist is chosen. and add a stop wacth to help people track how long they listen to each track.
+/*
 const wubz = () => {
 	alert(
 		"Welcome to Wook Bass: here you find lots of whomp whomps, wubz for your dubz, and many other obscure sounds instead of lyrics. Wook bass is one of many sub generes of Dubstep"
@@ -81,18 +81,19 @@ const celeb = () => {
 		alert("Idris Iba is a renissanse man. Mixed martial arts, actor, Comedian, Disc Jocky, AND producer.");
 	}
 };
+*/
 
 window.onload = function(){
 	// eslint-disable-next-line no-octal
-	var seconds = 00;
+	let seconds = 0;
 	// eslint-disable-next-line no-octal
-	var tens = 00;
-	var OutputSeconds = document.getElementById("second");
-	var OutputTens = document.getElementById("tens");
-	var buttonStart = document.getElementById("btn-start");
-	var buttonStop = document.getElementById("btn-stop");
-	var buttonReset = document.getElementById("btn-reset");
-	var Interval;
+	let tens = 0;
+	const OutputSeconds = document.getElementById("second");
+	const OutputTens = document.getElementById("tens");
+	const buttonStart = document.getElementById("btn-start");
+	const buttonStop = document.getElementById("btn-stop");
+	const buttonReset = document.getElementById("btn-reset");
+	let Interval;
 
 	buttonStart.addEventListener("click", () => {
 		clearInterval(Interval);
