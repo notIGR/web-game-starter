@@ -2,21 +2,23 @@ html {
   min-height: 100vh;
 }
 body {
-  background: radial-gradient(rgb(12, 89, 12), black);
+  background: radial-gradient(#0c590c, black);
   margin: 1%;
   padding: 1%;
 }
 .stop-watch {
   margin: 2em auto;
   position: sticky;
-  top: 0;
+  top: 3em;
   margin-right: 12em;
   opacity: 69%;
 }
 .time {
   font-size: 3em;
 }
-#btn-start,#btn-stop,#btn-reset {
+#btn-start,
+#btn-stop,
+#btn-reset {
   border: none;
   border-radius: 10px;
   padding: 2em 1em;
@@ -26,7 +28,9 @@ body {
   background-color: #008000;
   color: white;
 }
-#btn-start:hover,#btn-stop:hover,#btn-reset:hover {
+#btn-start:hover,
+#btn-stop:hover,
+#btn-reset:hover {
   cursor: pointer;
   background-color: #adff2f;
   color: #0037cd;
@@ -72,9 +76,16 @@ form {
   align-items: center;
   justify-content: center;
 }
+form > input {
+  display: none
+}
+form input:checked + label {
+  background-color: #8dffdd;
+}
 
 .selectArtist img {
   width: 25vw;
+  border-radius: 24px;
 }
 
 #vs {
@@ -83,3 +94,10 @@ form {
 ul {
   list-style-type: none;
 }
+iframe {
+  border: none;
+  border-radius: 12px;
+  width: 40%;
+  height: 80px;
+}
+
