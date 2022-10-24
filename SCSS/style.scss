@@ -1,0 +1,99 @@
+html {
+	min-height: 100vh
+}
+body {
+	background: radial-gradient(#0c590c, black);
+	margin: 1%;
+	padding: 1%
+}
+.stop-watch {
+	margin: 2em auto ;
+	position: sticky ;
+	top: 3em ;
+	margin-right: 12em ;
+	opacity: 69% 
+}
+.time {
+	font-size: 3em 
+}
+#btn-start,
+#btn-stop,
+#btn-reset {
+	border: none; 
+	border-radius: 10px ;
+	padding: 2em 1em;
+	font-size: 1.2em ;
+	width: 75px ;
+	margin: 10px ;
+	background-color: #008000 ;
+	color: white 
+}
+#btn-start:hover,
+#btn-stop:hover,
+#btn-reset:hover {
+	cursor: pointer ;
+	background-color: #adff2f ;
+	color: #0037cd ;
+	transition: 0.5s ;
+	border: none 
+}
+#app {
+	font-family: Avenir, Helvetica, Arial, sans-serif ;
+	-webkit-font-smoothing: antialiased ;
+	-moz-osx-font-smoothing: grayscale ;
+	text-align: center ;
+	color: #fefefe ;
+	margin-top: 60px 
+}
+#welcome {
+	display: block 
+}
+.spotifyLog,
+#b1,
+#b2,
+#b3,
+#b4,
+#b5 {
+	background: #008000 ;
+	color: white ;
+	padding: 1rem ;
+	text-align: center ;
+	margin: auto ;
+	text-decoration: none ;
+	display: flex ;
+	font-size: 16px ;
+	cursor: pointer ;
+	border-radius: 16px 
+}
+.spotifyLog 
+	&:hover {
+		background: #adff2f ;
+		color: #0037cd 
+    }
+form {
+	display: flex ;
+	align-items: center ;
+	justify-content: center 
+	& > input 
+		display; none
+	input 
+		&:checked 
+			& + label 
+				background-color: #8dffdd 
+.selectArtist 
+	img {
+		width: 25vw ;
+		border-radius: 24px 
+}
+#vs {
+	padding: 1vw 
+}
+ul {
+	list-style-type: none 
+}
+iframe {
+	border: none ;
+	border-radius: 12px ;
+	width: 40% ;
+	height: 80px 
+}

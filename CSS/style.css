@@ -1,103 +1,17 @@
-html {
-  min-height: 100vh;
-}
-body {
-  background: radial-gradient(#0c590c, black);
-  margin: 1%;
-  padding: 1%;
-}
-.stop-watch {
-  margin: 2em auto;
-  position: sticky;
-  top: 3em;
-  margin-right: 12em;
-  opacity: 69%;
-}
-.time {
-  font-size: 3em;
-}
-#btn-start,
-#btn-stop,
-#btn-reset {
-  border: none;
-  border-radius: 10px;
-  padding: 2em 1em;
-  font-size: 1.2em;
-  width: 75px;
-  margin: 10px;
-  background-color: #008000;
-  color: white;
-}
-#btn-start:hover,
-#btn-stop:hover,
-#btn-reset:hover {
-  cursor: pointer;
-  background-color: #adff2f;
-  color: #0037cd;
-  transition: 0.5s;
-  border: none;
-}
+/* Error: expected "}".
+ *    ,
+ * 99 | }
+ *    |  ^
+ *    '
+ *   scss\style.scss 99:2  root stylesheet */
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #fefefe;
-  margin-top: 60px;
-}
-#welcome {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "}".\a    \2577 \a 99 \2502  }\a    \2502   ^\a    \2575 \a   scss\\style.scss 99:2  root stylesheet';
 }
-.spotifyLog,
-#b1,
-#b2,
-#b3,
-#b4,
-#b5 {
-  background: #008000;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin: auto;
-  text-decoration: none;
-  display: flex;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-.spotifyLog:hover {
-  background: #adff2f;
-  color: #0037cd;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-form > input {
-  display: none
-}
-form input:checked + label {
-  background-color: #8dffdd;
-}
-
-.selectArtist img {
-  width: 25vw;
-  border-radius: 24px;
-}
-
-#vs {
-  padding: 1vw;
-}
-ul {
-  list-style-type: none;
-}
-iframe {
-  border: none;
-  border-radius: 12px;
-  width: 40%;
-  height: 80px;
-}
-
